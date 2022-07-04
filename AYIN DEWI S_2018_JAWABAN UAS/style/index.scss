@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+$font-keluarga:'Poppins', sans-serif;
+$backgroun-gambar:url('../img/car-1.png');
+$kotak-putih:white;
+$kotak-hitam:black;
+$persegi-biru:blue;
+$teks-kuning:yellow;
+$warna-background:#06283D;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:$font-keluarga;
+}
+
+header{
+  background-image: $backgroun-gambar;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+ul{
+    margin-top: 10px;
+    list-style-type: none;
+    float: right;
+    margin-right: 20px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: $kotak-putih;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius:1px solid transparent;
+    transition:0.6s;
+}
+ul li a:hover {
+    background-color:$kotak-putih;
+    color:$kotak-hitam;
+}
+ul li.active {
+    background-color:$kotak-putih;
+    color:$kotak-hitam;
+}
+
+.logo-text{
+    font-size:30px;
+    font-weight:bold;
+    color:$kotak-putih;
+    margin-top:10px;
+    display:inline-block;
+    color:$kotak-putih;
+}
+
+.main{
+    max-width:1200px;
+    margin:auto;
+}
+
+.title{
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.title h1{
+    font-size:60px;
+    color:$kotak-putih;
+    font-weight:bold;
+    text-decoration:underline;
+}
+
+.button{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border:1px solid $kotak-putih;
+    text-decoration:none;
+    margin-top:60px;
+    background-color:$kotak-putih;
+    border-radius:10px;
+    padding:10px 20px;
+    font-size:20px;
+}
+
+.button:hover{
+    background-color:$kotak-hitam;
+    color:$kotak-putih;
+}
+
+/* section */
+.section1{
+    background-color:$warna-background;
+    padding:50px 0;
+}
+.grid-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    grid-gap:10px;
+    margin:auto;
+    padding:20px;
+}
+  
+.grid-text1{
+    color:$kotak-putih;
+    font-size:20px;
+    font-weight:bold;
+    text-align:justify;
+}
+  
+.grid-text1 button {
+    background-color:$kotak-putih;
+    border:1px solid $kotak-putih;
+    border-radius:10px;
+    padding:10px 20px;
+    font-size:20px;
+    color:$kotak-hitam;
+    transition:0.6s;
+}
+  
+.grid-item2{
+    background-color:$kotak-putih;
+    border-radius:10px;
+    padding:10px 20px;
+    font-size:20px;
+    color:$kotak-hitam;
+    transition:0.6s;
+  }
+.section2{
+    background-color:$persegi-biru;
+    padding:60px 0;
+    margin-top:none;
+}
+.title-gallery{
+    font-size:30px;
+    font-weight:bold;
+    color:$kotak-putih;
+    text-align:center;
+    margin-top:2px;
+}
+.gallery{
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid $kotak-putih;
+    float: left;
+    width: 400px;
+    text-align: center;
+    margin-left: 25px;
+}
+  .gallery img {
+    width: 100%;
+    height: auto;
+}
+  
+.wrapper-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    grid-gap:10px;
+    margin:auto;
+    padding:20px;
+}
+  
+.grid1{
+    background-color:$kotak-hitam;
+    border-radius:10px;
+    width:95%;
+    height:200px;
+    padding:20px 20px;
+    font-size:20px;
+    color:$kotak-putih;
+    transition:0.6s;
+    justify-content:center;
+}
+.grid1 h4{
+    font-size:20px;
+    font-weight:bold;
+    color:$teks-kuning;
+    text-align:justify;
+    margin-top:10px;
+}
+  
+.grid1 h2{
+    font-size:40px;
+    font-weight:bold;
+    color:$kotak-putih;
+    margin-top:10px;
+}
+  
+.grid2{
+    background-color:$kotak-putih;
+    width:90%;
+    height:200px;
+    padding:20px 20px;
+    font-size:20px;
+    transition:0.6s;
+    margin-top:50px;
+}
+  
+.grid2 button{
+    background-color:$persegi-biru;
+    border:1px solid $kotak-putih;
+    border-radius:10px;
+    padding:10px 20px;
+    font-size:20px;
+    color:$kotak-putih;
+    transition:0.6s;
+    float:left;
+    margin-left:20px;
+}
+  
+.section4{
+    background-color:$warna-background;
+}
+.section4 .grid2{
+    background-color:$warna-background;
+}
+  .section4 .grid2 button{
+    background-color:$persegi-biru;
+    padding:10px 20px;
+    font-size:20px;
+    color:$kotak-putih;
+    transition:0.6s;
+    float:left;
+    margin-left:20px;
+}
+  
+footer{
+    background-color:$kotak-hitam;
+    padding:10px 0;
+    color:$kotak-putih;
+    text-align:center;
+}
+  
+  /* about.html */
+  

@@ -1,0 +1,52 @@
+$font-keluarga:'Poppins', sans-serif;
+$kotak-putih:white;
+$kotak-hitam:black;
+$persegi-biru:blue;
+$header-color:green;
+$warna-background:#06283D;
+$button-color:#00bfff;
+
+.container{
+    width: 100%;
+    height: 500px;
+    background-color:$kotak-putih;
+    padding: 20px;
+}
+.login{
+    width: 50%;
+    height: 50%;
+    background-color: $kotak-putih;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+form{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid $kotak-putih;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+button{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid $kotak-putih;
+    margin-top: 10px;
+    background-color: $button-color;
+    color: $kotak-putih;
+    font-weight: bold;
+    cursor: pointer;
+}
